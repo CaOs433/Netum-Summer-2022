@@ -147,11 +147,12 @@ const errorHandler = (err: MySQLError, req: any, res: any, err_msg: string, succ
         } else {
             // Some other error occurred
             res.status(500).send({
-                message: err.message || err_msg
+                message: err_msg,
+                mysql_error_msg: err.message || ""
             });
         }
     } else {
-        // No errors, send results data or success message for the client
-        res.send(data ? data : { message: success_msg });
+        // No errors, send results data and success message for the client
+        res.send({ message: success_msg, data: data || true });
     }
 }

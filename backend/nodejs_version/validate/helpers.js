@@ -1,12 +1,13 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.validateAge = exports.validateName = void 0;
 /**
  *
  * @param str name string to be validated
  * @param name parameter's name for error messages
  * @returns array of error messages (empty if valid)
  */
-exports.validateName = (str, name) => {
+const validateName = (str, name) => {
     // Array for error messages
     const errors = [];
     // Return error if str was undefined
@@ -15,12 +16,13 @@ exports.validateName = (str, name) => {
     // Return error array
     return errors;
 };
+exports.validateName = validateName;
 /**
  *
  * @param age value to be validated
  * @returns array of error messages (empty if valid)
  */
-exports.validateAge = (age) => {
+const validateAge = (age) => {
     // Return error if age was undefined
     if (!age)
         return ["Missing parameter 'age'!"];
@@ -35,3 +37,4 @@ exports.validateAge = (age) => {
     // Return error array
     return errors;
 };
+exports.validateAge = validateAge;

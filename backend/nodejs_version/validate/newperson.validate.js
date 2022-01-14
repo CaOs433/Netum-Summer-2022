@@ -10,11 +10,11 @@ const newPerson = (body) => {
     // Array for error messages
     const errors = [];
     // Validate first name
-    errors.push(...helpers_1.validateName(body.fname, "fname"));
+    errors.push(...(0, helpers_1.validateName)(body.fname, "fname"));
     // Validate last name
-    errors.push(...helpers_1.validateName(body.lname, "lname"));
+    errors.push(...(0, helpers_1.validateName)(body.lname, "lname"));
     // Validate age
-    errors.push(...helpers_1.validateAge(body.age));
+    errors.push(...(0, helpers_1.validateAge)(body.age));
     // Return array of error messages if there was any
     if (0 < errors.length)
         return { valid: false, error: errors };
