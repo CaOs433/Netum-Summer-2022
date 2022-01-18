@@ -151,7 +151,7 @@ const errorHandler = (err: MySQLError, req: any, res: any, err_msg: string, succ
                 mysql_error_msg: err.message || ""
             });
         }
-    } else if (data.errno) {
+    } else if (data && data.errno) {
         // Some other error occurred
         res.status(500).send({ message: err_msg });
     } else {
