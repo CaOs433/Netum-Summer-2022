@@ -2,7 +2,7 @@
 
 Pre-assignment for Software Development summer job 2022 at Netum
 
-Full-stack application to fetch, add, edit and delete persons in a MySQL database.
+Full-stack application to fetch, add, edit and delete persons in a `MySQL` database.
 Backend is made with `TypeScript` & `NodeJS`, frontend with `TypeScript` & `React`.
 
 The app is running at [Heroku](https://netum-summer.herokuapp.com).
@@ -10,7 +10,7 @@ The app is running at [Heroku](https://netum-summer.herokuapp.com).
 
 ## Database
 
-The database is made with MySQL add-on at Heroku.
+The database is made with `MySQL` add-on at Heroku.
 
 ``` sql
 CREATE TABLE persons
