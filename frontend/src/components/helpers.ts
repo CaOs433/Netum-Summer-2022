@@ -7,7 +7,7 @@ export const parseAge = (ageV: string) => {
     // Remove all characters but numbers
     let filtered = (ageV.match(/[0-9]+/) || []).join('');
     // Remove leading zeros but keep single zero
-    filtered.replace(/^0+(\d)/, '$1'); //ageV.replace(/[0-9]+/, '')
+    filtered = filtered.replace(/^0+(\d)/, '$1'); //ageV.replace(/[0-9]+/, '')
     // Return filtered age
     return filtered;
 }

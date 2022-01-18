@@ -117,6 +117,10 @@ const errorHandler = (err, req, res, err_msg, success_msg, data) => {
             });
         }
     }
+    else if (data.errno) {
+        // Some other error occurred
+        res.status(500).send({ message: err_msg });
+    }
     else {
         // No errors, send results data and success message for the client
         res.send({ message: success_msg, data: data || true });
