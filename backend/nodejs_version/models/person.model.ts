@@ -7,7 +7,7 @@ import { MysqlError } from "mysql";
 type Rlt = (res: any, err: any) => void;
 
 /**
- *
+ * Person object
  * @param this the 'this'
  * @param person constructor data
  */

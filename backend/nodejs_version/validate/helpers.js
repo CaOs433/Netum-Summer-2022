@@ -2,7 +2,7 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.validateAge = exports.validateName = void 0;
 /**
- *
+ * Validate a name string
  * @param str name string to be validated
  * @param name parameter's name for error messages
  * @returns array of error messages (empty if valid)
@@ -18,7 +18,7 @@ const validateName = (str, name) => {
 };
 exports.validateName = validateName;
 /**
- *
+ * Validate an age value of number or string
  * @param age value to be validated
  * @returns array of error messages (empty if valid)
  */
