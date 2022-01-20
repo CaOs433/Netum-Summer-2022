@@ -53,5 +53,5 @@ Default port is 8080, so you should now be able to access the app with your brow
 
 ## Frontend
 
-Instructions to use can be found from [frontend/README.md](frontend/README.md).
+Instructions to use can be found from [frontend/README.md](frontend/).
 
